@@ -1,13 +1,14 @@
-#include <stdio.h> 
+#include <stdio.h>
 
-int main ()
+int main()
 {
-    int x;
-    int y;
-
-    printf("inserisci un numero: ");
-    scanf("%d", &x);
-    printf("ïnserisci un altro numero: ");
-    scanf("%d", &y);
-    printf("I numeri inseriti sono x = %d e y = %d\n", x, y);
+    int age;
+    char sesso;
+    printf("Inserisci la tua età:");
+    scanf(" %d", &age);
+    
+    printf("Inserisci il tuo sesso:");
+    scanf(" %c", &sesso);
+    printf(" Hai %d anni e sei %c\n", age, sesso);
+    return 0;
 }
