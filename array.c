@@ -1,32 +1,35 @@
-#include <stdio.h>
+#include <stdio.h> 
+
 int main()
 {
-    int n;
-    printf("ïnserisci un numero:");
-    scanf("%d", &n);
-
-    int array[n];
-    int i = 0;
-    int primo = 2;
+    int i;
+    int a = 2;
+    int z = 0;
     int divisore = 2;
-    while (i < n)
+    
+    printf("scrivere numero \n");
+    scanf("%d", &i);
+    int array[i];
+
+    
+    while (z<i)
     {
-        while(primo % divisore != 0 && divisore < primo)
-        {
+        while (a % divisore != 0 && divisore < a)   
+        {    
             divisore++;
         }
-        if (divisore == primo)
+        if (divisore == a)
         {
-            array[i] = primo;
-            i++;
+            array[z] = a;
+            z++;
         }
-        primo++;
-        divisore=2;
-        }
-        i=0;
-        while (i < n)
-        {
-            printf("%d\n", array[i]);
-            i++;
-        }
-    }
+        a++;     
+        divisore = 2;
+    }    
+    z =0;
+    while (z<i)
+    {
+        printf("%d\n", array[z]);
+        z++;
+    }        
+}
